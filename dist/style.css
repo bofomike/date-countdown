@@ -1,22 +1,50 @@
 body {
   text-align: center;
-  padding: 70px 50px;
-  background: #0D1A29;
+  background: #F9F7F3;
   font-family: "Helvetica Neue", "Open Sans", helvetica, arial, sans-serif;
 }
 #timer {
-  font-size: 3em;
-  font-weight: 100;
-  color: white;
-  text-shadow: 0 0 20px #48C8FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 100px;
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, #12C2E9 0%, #c471ed 50%, #f64f59 100%);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 #timer div {
   display: inline-block;
-  min-width: 90px;
+  min-width: 170px;
 }
 #timer div span {
   color: #B1CDF1;
   display: block;
   font-size: 0.35em;
   font-weight: 400;
+}
+
+@media (max-width: 810px) {
+  #timer {
+    font-size: 80px;
+  }
+  #timer div {
+    display: inline-block;
+    min-width: 130px;
+  }
+}
+
+@media (max-width: 390px) {
+  #timer {
+    font-size: 50px;
+  }
+  #timer div {
+    display: inline-block;
+    min-width: 80px;
+  }
 }
